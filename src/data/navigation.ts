@@ -17,4 +17,8 @@ export const JOURNEYS: {key: JourneyKey; title: string; description: string; hre
 export const FOOTER_COMPANY: {label:string;href:NavDestination}[] = [{label:"About us",href:null}];
 export const FOOTER_HELP: typeof FOOTER_COMPANY = [{label:"Contact us",href:null},{label:"Privacy policy",href:null},{label:"Terms and conditions",href:null}];
 export const FOOTER_LEGAL: typeof FOOTER_COMPANY = [{label:"Privacy Policy",href:null},{label:"Terms of Service",href:null}];
-export const FOOTER_ALTERNATIVES: typeof FOOTER_COMPANY = [{label:"All Alternatives",href:"/alternatives"},{label:"PartnerStack Alternatives",href:"/alternatives/partnerstack-alternatives"}];
+export const FOOTER_ALTERNATIVES: typeof FOOTER_COMPANY = [
+  { label: "All Alternatives", href: "/alternatives" },
+  { label: "PartnerStack Alternatives", href: "/alternatives/partnerstack-alternatives" },
+  { label: "Euler Alternatives", href: "/alternatives/euler-alternatives" },
+];

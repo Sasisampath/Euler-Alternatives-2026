@@ -1,3 +1,5 @@
+import { eulerGuide } from "@/data/euler-alternatives";
+
 export type AlternativeArticle = {
   slug: string; title: string; description: string; image: string;
   wordCount: number; author?: {name: string; role?: string; photo?: string};
@@ -13,4 +15,4 @@ export const partnerstackGuide: AlternativeArticle = {
   // Recount when editorial copy changes; no author or publication history supplied.
   wordCount: 3409,
 };
-export const alternativeArticles = [partnerstackGuide];
+export const alternativeArticles = [partnerstackGuide, eulerGuide];
