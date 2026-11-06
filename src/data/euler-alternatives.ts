@@ -1,26 +1,5 @@
 import type { AlternativeArticle } from "@/data/alternatives";
-
-type TextRun = {
-  text: string;
-  href?: string;
-  bold?: boolean;
-};
-
-export type Copy = string | TextRun[];
-
-type Product = {
-  slug: string;
-  name: string;
-  bestFor: string;
-  intro: Copy;
-  image: { src: string; alt: string; width: number; height: number };
-  features: Copy[];
-  prosTitle: string;
-  pros: Copy[];
-  considerationsTitle: string;
-  considerations: Copy[];
-  pricing: Copy[];
-};
+import type { GuideProduct } from "@/components/alternatives/comparison-guide";
 
 // Article copy and product order follow the supplied editorial draft.
 export const eulerGuide: AlternativeArticle = {
@@ -68,7 +47,7 @@ export const takeaways = {
 
 export const productsTitle = "Top 10 Euler Alternatives: A Detailed Breakdown";
 
-export const products: Product[] = [
+export const products: GuideProduct[] = [
   {
     slug: "jazzhq",
     name: "JazzHQ",
