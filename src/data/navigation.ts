@@ -22,4 +22,5 @@ export const FOOTER_ALTERNATIVES: typeof FOOTER_COMPANY = [
   { label: "PartnerStack Alternatives", href: "/alternatives/partnerstack-alternatives" },
   { label: "Salesforce PRM Alternatives", href: "/alternatives/salesforce-prm-alternatives" },
   { label: "Euler Alternatives", href: "/alternatives/euler-alternatives" },
+  { label: "Channelscaler Alternatives", href: "/alternatives/channelscaler-alternatives" },
 ];
