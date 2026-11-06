@@ -20,5 +20,6 @@ export const FOOTER_LEGAL: typeof FOOTER_COMPANY = [{label:"Privacy Policy",href
 export const FOOTER_ALTERNATIVES: typeof FOOTER_COMPANY = [
   { label: "All Alternatives", href: "/alternatives" },
   { label: "PartnerStack Alternatives", href: "/alternatives/partnerstack-alternatives" },
+  { label: "Salesforce PRM Alternatives", href: "/alternatives/salesforce-prm-alternatives" },
   { label: "Euler Alternatives", href: "/alternatives/euler-alternatives" },
 ];
