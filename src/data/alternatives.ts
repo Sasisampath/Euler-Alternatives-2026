@@ -15,4 +15,7 @@ export const partnerstackGuide: AlternativeArticle = {
   // Recount when editorial copy changes; no author or publication history supplied.
   wordCount: 3409,
 };
-export const alternativeArticles = [partnerstackGuide, eulerGuide];
+export const alternativeArticles: AlternativeArticle[] = [
+  partnerstackGuide,
+  { ...eulerGuide, image: "/buyers-guide/euler/jazzhq.png" },
+];

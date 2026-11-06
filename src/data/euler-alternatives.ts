@@ -1,5 +1,3 @@
-import type { AlternativeArticle } from "@/data/alternatives";
-
 type TextRun = {
   text: string;
   href?: string;
@@ -22,13 +20,10 @@ type Product = {
   pricing: Copy[];
 };
 
-// Article copy and product order follow the supplied editorial draft.
-export const eulerGuide: AlternativeArticle = {
+export const eulerGuide = {
   slug: "euler-alternatives",
   title: "Best Euler Alternatives for Partner Teams in 2026",
   description: "Compare the best Euler alternatives for PRM, partner strategy, automation, incentives, and partner management to find the right fit for your team.",
-  image: "/buyers-guide/partnerstack/jazzhq.png",
-  // Counted from the supplied article, including headings, tables and FAQs.
   wordCount: 3189,
 };
 
@@ -75,7 +70,7 @@ export const products: Product[] = [
     bestFor: "combining PRM software, strategy backed by an on-demand team",
     intro: [{"text": "JazzHQ", "href": "https://www.jazzhq.ai/"}, {"text": " is a full-stack AI distribution platform best for early- to mid-sized AI and SaaS companies. Where Euler automates partner operations for a program you already run, Jazz helps you start one. It pairs a partner marketplace and partner OS along with an on demand team that designs the program, recruits partners, and runs the day-to-day operations. If Euler feels like it assumes you already have partners, JazzHQ is built for the step before that."}],
     image: {
-      src: "/buyers-guide/partnerstack/jazzhq.png",
+      src: "/buyers-guide/euler/jazzhq.png",
       alt: "JazzHQ homepage showing its AI distribution platform and options to list a product or become a partner",
       width: 2048,
       height: 1002,
@@ -141,7 +136,7 @@ export const products: Product[] = [
     bestFor: "CRM-native, off-portal partner management",
     intro: [{"text": "Introw", "href": "https://www.introw.io/"}, {"text": " is an AI-native, CRM-first Partner Relationship Management Platform. They work from HubSpot, Salesforce, Slack, Teams, or email, and everything syncs back to the CRM. If you like Euler's off-portal approach but want a stronger CRM-native core and public entry pricing, Introw is a direct comparison."}],
     image: {
-      src: "/buyers-guide/partnerstack/introw.png",
+      src: "/buyers-guide/euler/introw.png",
       alt: "Introw homepage showing its partnership management platform and AI deal registration example",
       width: 2048,
       height: 1064,
@@ -209,7 +204,7 @@ export const products: Product[] = [
     bestFor: "affordable pipeline-driven PRM",
     intro: [{"text": "Kiflo", "href": "https://www.kiflo.com/"}, {"text": " gives lean SaaS teams a full partner toolkit at an affordable price. It's built for startups and smaller teams, but it competes on transparency and support rather than an AI-first, portal-free model. It adds account mapping and co-selling, so partner activity ties directly to your sales pipeline."}],
     image: {
-      src: "/buyers-guide/partnerstack/kiflo.png",
+      src: "/buyers-guide/euler/kiflo.png",
       alt: "Kiflo homepage showing its partner pipeline and co-selling platform",
       width: 2048,
       height: 1005,
@@ -244,7 +239,7 @@ export const products: Product[] = [
     bestFor: "a fast, structured mid-market program",
     intro: [{"text": "Channeltivity", "href": "https://www.channeltivity.com/"}, {"text": " is a cloud-based PRM platform designed to help companies manage partner relationships, programs, and channels. It offers dedicated Salesforce and HubSpot editions, making it a practical option for growing teams that want a PRM that can be deployed quickly without heavy configuration."}],
     image: {
-      src: "/buyers-guide/partnerstack/channeltivity.png",
+      src: "/buyers-guide/euler/channeltivity.png",
       alt: "Channeltivity homepage showing its channel management platform and CRM integrations",
       width: 2048,
       height: 1064,
@@ -278,7 +273,7 @@ export const products: Product[] = [
     bestFor: "marketing-heavy partner programs",
     intro: [{"text": "Mindmatrix", "href": "https://www.mindmatrix.net/"}, {"text": " connects PRM, through-channel marketing, and enablement in one platform, with 25+ years behind it. Its strength is partner marketing where it turns one corporate campaign into thousands of co-branded partner campaigns, with a team that can run those campaigns for partners. If your motion depends on marketing through partners, it might be worth a try."}],
     image: {
-      src: "/buyers-guide/partnerstack/mindmatrix.png",
+      src: "/buyers-guide/euler/mindmatrix.png",
       alt: "Mindmatrix homepage showing its Bridge ecosystem platform and channel and alliance capabilities",
       width: 2048,
       height: 1043,
@@ -344,7 +339,7 @@ export const products: Product[] = [
     bestFor: "teams already on Salesforce",
     intro: [{"text": "Salesforce PRM", "href": "https://www.salesforce.com/in/sales/partner-cloud/"}, {"text": " (now part of Partner Cloud) is built natively on Salesforce, so partner data lives in the same CRM as direct sales. If your sales operation already runs on Salesforce, this keeps everything in one system, at the cost of setup effort and total price."}],
     image: {
-      src: "/buyers-guide/partnerstack/salesforce-partner-cloud.png",
+      src: "/buyers-guide/euler/salesforce-partner-cloud.png",
       alt: "Salesforce Partner Cloud page showing the product overview and demo",
       width: 2048,
       height: 1027,

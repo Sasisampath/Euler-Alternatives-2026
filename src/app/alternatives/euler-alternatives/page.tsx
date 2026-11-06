@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Fragment, type ReactNode } from "react";
-import { ArticleBreadcrumb, ArticleMetadata } from "@/components/alternatives/article-editorial";
+import Image from "next/image";
 import { Footer } from "@/components/layout/footer";
 import { GridBackground } from "@/components/layout/grid-background";
 import { Header } from "@/components/layout/header";
@@ -20,8 +20,8 @@ import {
   type Copy,
 } from "@/data/euler-alternatives";
 import { pageSeo } from "@/lib/seo";
-import styles from "../partnerstack-alternatives/page.module.css";
-import { ReadingProgress } from "../partnerstack-alternatives/reading-progress";
+import styles from "./page.module.css";
+import { ReadingProgress } from "./reading-progress";
 
 const path = `/alternatives/${eulerGuide.slug}`;
 
@@ -39,6 +39,8 @@ export const metadata: Metadata = {
     url: path,
   },
 };
+
+const readingMinutes = Math.ceil(eulerGuide.wordCount / 225);
 
 const bookingRequest = "mailto:contact@jazzhq.ai?subject=Book%20a%20Quick%20Call";
 
@@ -133,10 +135,14 @@ export default function EulerAlternativesPage() {
       <main className={styles.page} id="guide-content">
         <section className={styles.hero}>
           <div className={styles.heroCopy}>
-            <ArticleBreadcrumb title={eulerGuide.title} path={path} />
+            <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+              <span>Alternatives</span>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">{eulerGuide.title}</span>
+            </nav>
             <div className={styles.eyebrow}>BUYER&apos;S GUIDE <span>2026</span></div>
             <h1>{eulerGuide.title}</h1>
-            <ArticleMetadata article={eulerGuide} />
+            <div className={styles.readingTime}>{readingMinutes} min read</div>
             <p>{intro[0]}</p>
             <div className={styles.heroMeta}>
               <span>{products.length} alternatives compared</span>
@@ -211,9 +217,8 @@ export default function EulerAlternativesPage() {
                 </div>
                 <div className={styles.toolIntro}><p><ArticleText copy={product.intro} /></p></div>
                 <div className={styles.toolImageWrap}>
-                  {/* Use the source dimensions and native lazy loading, as in the approved guide. */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
+                    unoptimized
                     src={product.image.src}
                     alt={product.image.alt}
                     width={product.image.width}
