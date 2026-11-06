@@ -7,9 +7,8 @@ export const salesforceGuide: AlternativeArticle = {
   title: "Best Salesforce PRM Alternatives in 2026",
   description: "Compare ten alternatives to Salesforce PRM by features, best fit, and what you can expect to pay.",
   image: "/buyers-guide/partnerstack/jazzhq.png",
-  // Estimated from rendered article text, scaled to the PartnerStack counting method.
-  // Recount when editorial copy changes; no author or publication history supplied.
-  wordCount: 4439,
+  // Rendered article text, including tables and collapsed FAQ answers.
+  wordCount: 5113,
 };
 
 export const salesforceMetaTitle = "Best Salesforce PRM Alternatives in 2026 | JazzHQ";

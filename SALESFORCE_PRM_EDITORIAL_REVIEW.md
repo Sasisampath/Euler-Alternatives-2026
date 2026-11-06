@@ -1,7 +1,9 @@
 # Salesforce PRM Alternatives — Editorial Review (DRAFT)
 
 Route: `/alternatives/salesforce-prm-alternatives` (branch `feature/salesforce-prm-alternatives-draft`)
-Publication controls: `noindex` ON, not in gallery, not in footer, not merged to `main`.
+Source publication controls: `noindex` on, with gallery and footer links withheld.
+Consolidation preview: gallery and footer links are enabled on the integration branch.
+The article remains `noindex` pending approval of the remaining editorial claims.
 Selection: 10 of 12 candidates approved by the team (excluded: Partnerize, PartnerStack).
 
 ## Images — all confirmed
