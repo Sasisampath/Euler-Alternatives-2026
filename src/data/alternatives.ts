@@ -1,5 +1,8 @@
 import { channelscalerGuide } from "@/data/channelscaler-alternatives";
 import { eulerGuide } from "@/data/euler-alternatives";
+import { kifloGuide } from "@/data/kiflo-alternatives";
+import { mindmatrixGuide } from "@/data/mindmatrix-alternatives";
+import { showKifloInNavigation } from "@/data/navigation";
 import { salesforceGuide } from "@/data/salesforce-prm-alternatives";
 
 export type AlternativeArticle = {
@@ -17,4 +20,15 @@ export const partnerstackGuide: AlternativeArticle = {
   // Recount when editorial copy changes; no author or publication history supplied.
   wordCount: 3409,
 };
-export const alternativeArticles = [partnerstackGuide, salesforceGuide, eulerGuide, channelscalerGuide];
+export const alternativeArticles = [
+  partnerstackGuide,
+  salesforceGuide,
+  eulerGuide,
+  channelscalerGuide,
+  mindmatrixGuide,
+  kifloGuide,
+];
+
+export const visibleAlternativeArticles = alternativeArticles.filter(
+  (guide) => guide.slug !== kifloGuide.slug || showKifloInNavigation,
+);
