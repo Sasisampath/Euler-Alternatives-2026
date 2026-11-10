@@ -1,8 +1,7 @@
 import type { AlternativeArticle } from "@/data/alternatives";
-import { kifloPublication } from "@/data/navigation";
 
 export const kifloGuide: AlternativeArticle = {
-  slug: kifloPublication.slug,
+  slug: "kiflo-alternatives",
   title: "8 Best Kiflo Alternatives in 2026 for Partner Relationship Management",
   description: "Compare the best Kiflo alternatives for partner relationship management, including pricing, features, AI, automation, and use cases.",
   image: "/buyers-guide/kiflo/jazzhq.webp",

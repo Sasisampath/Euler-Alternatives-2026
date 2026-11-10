@@ -6,7 +6,6 @@ import { Footer } from "@/components/layout/footer";
 import { GridBackground } from "@/components/layout/grid-background";
 import { Header } from "@/components/layout/header";
 import { TopBanner } from "@/components/layout/top-banner";
-import { kifloPublication } from "@/data/navigation";
 import {
   bookCallLabel,
   buyingCriteria,
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     title: metaTitle,
     description: kifloGuide.description,
     path,
-    indexable: kifloPublication.listed,
+    indexable: false,
   }),
   openGraph: {
     type: "article",

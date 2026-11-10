@@ -2,7 +2,6 @@ import { channelscalerGuide } from "@/data/channelscaler-alternatives";
 import { eulerGuide } from "@/data/euler-alternatives";
 import { kifloGuide } from "@/data/kiflo-alternatives";
 import { mindmatrixGuide } from "@/data/mindmatrix-alternatives";
-import { showKifloInNavigation } from "@/data/navigation";
 import { salesforceGuide } from "@/data/salesforce-prm-alternatives";
 
 export type AlternativeArticle = {
@@ -28,7 +27,3 @@ export const alternativeArticles = [
   mindmatrixGuide,
   kifloGuide,
 ];
-
-export const visibleAlternativeArticles = alternativeArticles.filter(
-  (guide) => guide.slug !== kifloGuide.slug || showKifloInNavigation,
-);
