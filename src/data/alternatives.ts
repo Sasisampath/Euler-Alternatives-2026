@@ -19,11 +19,13 @@ export const partnerstackGuide: AlternativeArticle = {
   // Recount when editorial copy changes; no author or publication history supplied.
   wordCount: 3409,
 };
-export const alternativeArticles = [
-  partnerstackGuide,
-  salesforceGuide,
-  eulerGuide,
-  channelscalerGuide,
-  mindmatrixGuide,
-  kifloGuide,
+export type GalleryArticle = AlternativeArticle & { galleryImage: string };
+
+export const alternativeArticles: GalleryArticle[] = [
+  { ...partnerstackGuide, galleryImage: "/buyers-guide/euler/partnerstack.webp" },
+  { ...salesforceGuide, galleryImage: "/buyers-guide/channelscaler/salesforce-prm.webp" },
+  { ...eulerGuide, galleryImage: "/buyers-guide/channelscaler/euler.webp" },
+  { ...channelscalerGuide, galleryImage: "/buyers-guide/euler/channelscaler.webp" },
+  { ...mindmatrixGuide, galleryImage: "/buyers-guide/channelscaler/mindmatrix.webp" },
+  { ...kifloGuide, galleryImage: "/buyers-guide/channelscaler/kiflo.webp" },
 ];
