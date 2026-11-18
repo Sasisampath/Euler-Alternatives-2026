@@ -103,7 +103,7 @@
 .site-wordmark-bot--vendor .site-wordmark-cursor { --tone: var(--color-vendor); }
 .site-wordmark-bot--partner .site-wordmark-cursor { --tone: var(--color-partner); }
 .site-wordmark-bot--jazz .site-wordmark-cursor { --tone: #fff; }
-.site-wordmark-cursor--you .site-wordmark-cursor__label { border-color: transparent; background: #fff; color: var(--color-text-primary); }
+.site-wordmark-cursor--you .site-wordmark-cursor__label { border-color: transparent; background: #fff; color: var(--color-text-primary, #242424); }
 
 /* Cursor tones: the homepage defines these globally; scoped to the footer here
    (same values) so the header's own copies stay untouched. */
